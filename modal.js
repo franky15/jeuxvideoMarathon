@@ -20,40 +20,31 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 function launchModal() {
 
   modalbg.style.display = "block";
-  console.log(modalbg.style.display)
+  
 }
 
 
+const btnSignup =  document.querySelector(".modal-btn");
 
-/////////////////////
+btnSignup.addEventListener( "click", ()=> {
 
-//conversion en minuscule de la deuxième lettre
-const btnSignup = document.querySelector(".modal-btn")
-const texte = btnSignup.textContent;
+  console.log("je clique cur je m'inscrit")
 
-//const texte = "je M'incris"
+  modalbg.style.display = "block";
+  
 
-console.log("***** texte ")
-console.log(texte )
+})
 
+const btnSignup1 =  document.querySelector(".modal-btn1");
 
+btnSignup1.addEventListener( "click", ()=> {
 
-/*
-  if(texte){ //texte.length >= 3
+  console.log("je clique cur je m'inscrit")
+  
+  modalbg.style.display = "block";
+  
 
-    const troisiemeLettre = texte.charAt(2)  //régupération de l'indice de la 3 lettre
-    
-    console.log("***** texte.charAt(2)")
-    console.log(texte.charAt(2) )   
-    
-    const texteConverti = texte.replace(troisiemeLettre, troisiemeLettre.toLowerCase())
-    btnSignup.textContent = texteConverti
-  }
-*/
-////////////////////
-
-
-
+})
 
 
 /*********** gestion des formulaires */
@@ -374,7 +365,7 @@ const formSubmit = document.querySelector("#reserve"); //form
 close.addEventListener("click", () => {
 
   //modification du style pour masquer l'élément
-  bground.style.display = "block"
+  bground.style.display = "none"  //"block"
 
  // formSubmit.style.display = "none"
  
@@ -382,7 +373,7 @@ close.addEventListener("click", () => {
 
  function resetFormManually() {
  
-  const elements = formSubmit.elements;
+  const elements = formSubmit.elements; 
 
   for (let i = 0; i < elements.length; i++) {
 

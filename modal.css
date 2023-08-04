@@ -80,7 +80,11 @@ img {
     float: right;
     display: block;
   }
+
+  
 }
+
+
 
 @media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
@@ -94,6 +98,8 @@ img {
     display: block;
     text-align: left;
   }
+
+ 
 }
 
 
@@ -115,6 +121,12 @@ img {
   }
 
     /*******/
+
+    
+
+     /**********************/
+
+  
 
 } 
 
@@ -550,7 +562,7 @@ input[data-error]::after {
   color: #fff;
   position: relative;
   text-align: left;
-  min-width: 424px;
+  /*min-width: 424px;*/
 
  
 }
@@ -594,7 +606,7 @@ input[data-error]::after {
 
 .btn-signup1 {
 
-  display: none;
+  display: none; 
 }
 
 /**********************/
@@ -640,7 +652,7 @@ footer {
     margin-bottom: -50px;
     
   
-    border: solid blue;
+   /* border: solid blue;*/
     /******************/
   
   }
@@ -686,25 +698,27 @@ footer {
 
   /**********************/
 
-.btn-signup1 {
+  .btn-signup1 {
 
-  display: block;
-  
-  background: #fe142f;
-  display: block;
-  margin: 0 auto;
-  border-radius: 7px;
-  font-size: 1rem;
-  padding: 12px 82px;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-  position: relative;
-  top: 40px;
+    display: block;
+    
+    background: #fe142f;
+    display: block;
+    margin: 0 auto;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 12px 82px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    top: 63px; /*  top: 83px;*/
+   
+    
 
-}
+  }
 
-/**********************/
+  /**********************/
 
 
 
@@ -728,9 +742,9 @@ footer {
 
     /**********************/
 
-    width: 74%;
+    width: unset;
   
-    font-size: 0.77rem;
+    font-size: 0.88rem;
     font-weight: normal;
     margin-top: 57px;
     padding: 0;
@@ -760,19 +774,12 @@ footer {
   
    
   position: relative;
-  top: -150px;
-   border: solid red;
+  top: 48px;
+   
+  /*border: solid red;*/
   }
 
-   /**********************/
-
-   main{
-
-    border: solid;
-    height: 800px;
-   
   
-   }
 }
 
 @keyframes modalopen {

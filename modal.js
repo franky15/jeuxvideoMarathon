@@ -281,7 +281,7 @@ const conditionFunction = () => {
       }  else{
 
         console.log('La case est décochée');
-        conditionAlert.textContent = "veillez entrez votre quantité"
+        conditionAlert.textContent = "veillez faire un choix"
         conditionAlert.style.display = "block"
         conditionAlert.style.color = "#FF4E60"
         conditionAlert.style.fontWeight = "400"
@@ -555,7 +555,7 @@ formSubmit.addEventListener("submit", (event) => {
         console.log('La case est décochée');
         // Autres opérations lorsque la case est décochée
 
-        localisationAlert.textContent = "veillez entrez votre quantité"
+        localisationAlert.textContent = "veillez faire un choix"
         localisationAlert.style.display = "block"
         localisationAlert.style.color = "#FF4E60"
         localisationAlert.style.fontWeight = "400"

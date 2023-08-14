@@ -1,3 +1,5 @@
+
+
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -6,6 +8,57 @@ function editNav() {
     x.className = "topnav";
   }
 }
+
+
+//////////://:
+
+
+
+//gestion de l'affichage du menu au click
+const lienNav = document.querySelector(".lienNav")
+const iconBtn = document.querySelector(".iconBtn")
+
+const affichageMenu = () => {
+
+  
+  iconBtn.addEventListener("click", () => {
+
+    editNav()
+    //lienNav.style.display = "block"
+
+  })
+
+  
+
+
+}
+affichageMenu()
+
+/*
+//gestion de la fermeture du menu au click hors du menu ou sur un élément du menu
+const lockMenu = () => {
+
+  
+  const lienMenu =  document.querySelectorAll(".lienMenu")
+  for(let i=0; i<= lienMenu.length; i++){
+
+      lienMenu[i].addEventListener("click", () => {
+
+        lienNav.style.display = "none"
+       
+    
+      })
+
+  }
+
+ 
+
+}
+lockMenu()
+*/
+
+
+//////////
 
 // DOM Elements
 const modalbg = document.querySelector(".bground");
@@ -50,11 +103,11 @@ btnSignup1.addEventListener( "click", ()=> {
 /*********** gestion des formulaires */
 
  // gestion des expressions régulières 
- let regexNomPrenom = new RegExp("^[a-zA-Z]+$")
+ let regexNomPrenom = new RegExp("^[a-zA-Z]{2,}$")
 
- let regexEmail = new RegExp("[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+")
+ //let regexEmail = new RegExp("[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+")
  //let regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
- 
+ let regexEmail = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
 
 
 let formDataPrenom = document.querySelector(".prenomContainer")

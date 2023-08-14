@@ -41,7 +41,9 @@ img {
     float: left;
 }
 .main-navbar {
-    float: right;
+    
+  float: right;
+  
    
 }
 .topnav a {
@@ -59,7 +61,7 @@ img {
 }
 
 .topnav a:hover {
-  background-color: #ff0000;
+  /*background-color: #ff0000;*/
   color: #ffffff;
   border-radius: 15px;
 }
@@ -73,6 +75,7 @@ img {
 .topnav .icon {
   display: none;
 }
+
 
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
@@ -782,6 +785,18 @@ footer {
   
 }
 
+/******/
+/*partie tablette*/
+@media (min-width: 801px) and (max-width: 957px) {
+  
+  .hero-headline{
+
+    font-size : 4.5rem;
+  }
+ 
+
+}
+/******/
 @keyframes modalopen {
   from {
     opacity: 0;
@@ -791,4 +806,5 @@ footer {
     opacity: 1;
   }
 }
+
 
